@@ -1,0 +1,22 @@
+<%- include('partials/head.ejs') %>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <h3 class="text-center">Add Account</h3>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <form action="/save" method="POST">
+                        <input type="text" name="first_name" class="form-control" placeholder="first name"><br>
+                        <input type="text" name="last_name" class="form-control" placeholder="last name"><br>
+                        <input type="text" name="email" class="form-control" placeholder="email"><br>
+                        <input type="text" name="phone" class="form-control" placeholder="phone"><br>
+                        <button class="btn btn-primary form-control">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer.ejs') %>
